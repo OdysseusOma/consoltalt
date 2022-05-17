@@ -1,0 +1,667 @@
+/* General style */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Navbar style */
+section .navContainer{
+    display: flex;
+    align-items: center;
+    padding: 10px 0 10px 0;
+    background: blue;
+    max-width: 1024px;
+    max-width: 102.4rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+section .navContainerPadding {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1024px;
+    max-width: 102.4rem;
+    width: 90%;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+}
+
+.navbar {
+    flex: 1;
+    display: flex;
+    max-height: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    align-items: center;
+    gap: 0.2rem;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+}
+
+.navbar:hover {
+    cursor: pointer;
+}
+.logo:hover {
+    cursor: pointer;
+}
+
+.test {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+
+.listMenu {
+    width: fit-content;
+    display: flex;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.listicles {
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    gap: 60px;
+}
+
+.list {
+    text-decoration: none;
+}
+
+
+
+/*=================== MEDIA QUERIES (Medium devices) ===================*/
+@media screen and (max-width: 1024px) {
+
+}
+
+/*=================== MEDIA QUERIES (Small devices) ===================*/
+@media screen and (max-width: 768px) {
+    .navContainer {
+        padding-bottom: 15px;
+        padding-bottom: 1.5rem;
+        padding-top: 20px;
+        padding-top: 2rem;
+    }
+    .listMenu {
+        display: none;
+    }
+
+    .navbar {
+        gap: 5px;
+    }
+}
+
+
+
+/* Main style */
+.mainBody {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding: 0 5rem 0 5rem;
+   
+}
+
+.homer {
+    flex: 1;
+    float: left;
+    width: fit-content;
+}
+
+.iconer {
+    flex: 1;
+    width: fit-content;
+    float: right;
+}
+
+
+/*=================== MEDIA QUERIES (Medium devices) ===================*/
+@media screen and (max-width: 1020px) {
+    .mainBody {
+        flex-direction: column;
+        justify-content: left;
+    }
+
+    
+    .homer {
+        order: 2;
+        height: auto;
+    }
+    
+    .iconer {
+        order: 1;
+    }
+    
+}
+
+/*=================== MEDIA QUERIES (Small devices) ===================*/
+@media screen and (max-width: 768px) {
+    .mainBody {
+        flex-direction: column;
+        left: -9%;
+    }
+    
+    .homer {
+        order: 2;
+    }
+    
+    .iconer {
+        order: 1;
+    }
+    
+
+   
+}
+
+
+
+
+.container {
+    display: flex;
+    align-items: center;
+    /* padding-bottom: 100px;
+    padding-bottom: 10rem; */
+    padding-right: 1.5%;
+    width: 57%;
+
+}
+
+
+
+.textarea {
+    margin: 50px 0 0 0;
+}
+
+.mainText {
+    max-width: 700px;
+    font-style: normal;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 0.035em;
+    margin-bottom: 20px;
+}
+
+.smallText {
+    max-width: 550px;
+    font-family: 'Space Grotesk', sans-serif;
+    flex-wrap: wrap;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+    letter-spacing: 0.01em;
+    z-index: 15;
+    margin-bottom: 35px;
+}
+
+.ctaArea {
+    display: flex;
+    align-items: center;
+    
+}
+
+
+
+input { 
+    width: 300px;
+    background: #FFFFFF;
+    
+    box-sizing: border-box;
+    border-color: #000000;
+    
+    color: #0a1c2e;
+    font-size: 16px;
+    font-family: 'Space Grotesk', sans-serif;
+    padding-left: 1rem;
+    line-height: 2.5rem;
+    text-align: left;
+    flex-grow: 1;
+    /* transition: border-color .25s cubic-bezier(.45,.01,.45,.95); */
+    transition-property: border-color;
+    transition-duration: 0.25s;
+    transition-timing-function: cubic-bezier(0.45, 0.01, 0.45, 0.95);
+    transition-delay: 0s;
+    
+}
+
+.formBtn {
+    width: 100px;
+    background: #63B8A7;
+    height: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Space Grotesk', sans-serif;
+
+    line-height: 2.5rem;
+    border-radius: 0 5px 5px 0;
+    
+    box-sizing: border-box;
+    border-color: #63B8A7;
+}
+
+
+svg {
+    transition: all 1s ease-in-out;
+}
+
+svg:hover {
+    transform: scale(1.2);
+}
+
+
+
+
+
+/*=================== MEDIA QUERIES (Medium devices) ===================*/
+@media screen and (max-width: 1024px) {
+    .container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        min-height: 500px;
+        min-height: 50rem;
+        width: 74%;
+    }
+
+    .textarea {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .mainText {
+        max-width: 400px;
+        margin-bottom: 20px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 50px;
+        letter-spacing: 0.035em;
+        z-index: 2;
+    }
+
+}
+
+
+
+
+
+/*=================== MEDIA QUERIES (Small devices) ===================*/
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 5px;
+        margin: auto;
+        width: 100%;
+        height: fit-content;
+        align-content: center;
+    }
+ 
+    .textarea {
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .textAreaContainer {
+        justify-content: center;
+        align-items: center;
+        place-content: center;
+        justify-items: center;
+        justify-self: center;
+    }
+
+    .mainText {
+        max-width: 450px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 50px;
+        letter-spacing: 0.035em;
+        z-index: 2;
+        text-align: center;
+    }
+
+    
+    .smallText {
+        font-style: normal;
+        text-align: center;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: 0.01em;
+    }
+
+
+    .useForm {
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+    }
+
+
+}
+
+
+
+
+
+
+.arrange {
+    display: flex;
+    justify-content: center;
+    padding-right: 10px;
+    /* background: red; */
+    
+}
+
+.img {
+    display: flex;
+    justify-content: right;
+    margin: 50px 0 0 0;
+    z-index: 1;
+}
+
+img {
+    justify-content: right;
+    max-width: 476px;
+    max-height: 400px;
+    object-fit: contain;
+}
+
+.circles {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    max-height: 100%;
+    max-width: 100%;
+    align-items: stretch;
+    
+}
+
+.orangeEllipse {
+    width: 61px;
+    height: 54px;
+    background: #FF6B17;
+    filter: blur(30px);
+    position: relative;
+    right: 15vw;
+}
+
+.blueEllipse {
+    width: 60px;
+    height: 54px;
+    margin-left: 50px;
+    background: #9917FF;
+    filter: blur(20px);
+    z-index: -5;
+
+}
+.yellowEllipse {
+    width: 60px;
+    height: 54px;
+    margin-left: 50px;
+    background: #cdf51a;
+    filter: blur(20px);
+    position: relative;
+    top: -30vh;
+    right: -20vw;
+    z-index: -5;
+
+}
+
+
+.ellipseGroup {
+    display: flex;
+    
+    position: relative;
+    z-index: -2;
+}
+
+.ellipse1 {
+    grid-column-start: 3;
+    position: absolute;
+    width: 633px;
+    height: 733px;
+    border: 1px solid rgb(160, 155, 155);
+    border-radius: 50%;
+    right: -70px;
+    top: -30px;
+
+}
+
+.ellipse2 {
+    grid-column-start: 3;
+    width: 561px;
+    height: 640px;
+    position: absolute;
+    border: 1px solid rgb(160, 155, 155);
+    border-radius: 50%;
+    right: -70px;
+    
+}
+
+.ellipse3 {
+    grid-column-start: 3;
+    width: 494px;
+    height: 522px;
+    border: 1px solid rgb(160, 155, 155);
+    border-radius: 50%;
+    position: absolute;
+    right: -70px;
+    top: 30px;
+}
+
+.vectors {
+    z-index: 3;
+    display: flex;
+    gap: 10px;
+
+}
+
+.chatVector {
+    position: relative;
+    top: -10vh;
+    right: -5vw;
+    width: 56px;
+    height: 49px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #074DFF;
+    border-radius: 100px;
+    box-shadow: 15px 0px 40px 10px #17D5FF;
+}
+
+.chatCart {
+    position: relative;
+    z-index: 3;
+    top: -50vh;
+    right: -10vw;
+    width: 56px;
+    height: 49px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #074DFF;
+    border-radius: 100px;
+}
+
+.chatInfo {
+    position: relative;
+    z-index: 3;
+    top: -60vh;
+    right: -25vw;
+    width: 56px;
+    height: 49px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #074DFF;
+    border-radius: 100px;
+}
+
+
+
+
+svg:hover {
+    transform: scale(1.2);
+}
+
+
+
+
+/*=================== MEDIA QUERIES (Medium devices) ===================*/
+
+@media screen and (max-width: 1020px) {
+    .arrange {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .img {
+        display: flex;
+        justify-content: center;
+        margin: 50px;
+        z-index: 1;
+    }
+    
+    .chatVector {
+        position: relative;
+        left: 60vw;
+        top: 14vh;
+        z-index: -5;
+    }
+
+    .chatCart {
+        position: relative;
+        top: -37vh;
+        right: -65vw;
+    }
+
+    .chatInfo {
+        position: relative;
+        top: -20vh;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 800) {
+
+}
+
+
+
+
+/*=================== MEDIA QUERIES (Small devices) ===================*/
+@media screen and (max-width: 768px) {
+
+    .arrange {
+        position: relative;
+    }
+    
+    .img {
+        display: flex;
+        justify-content: center;
+        margin: 50px;
+        z-index: 1;
+    }
+    
+    img {
+        max-width: 376px;
+        max-height: 200px;
+    }
+
+    .ellipseGroup {
+        display: none;
+    }
+
+    .vectors {
+        z-index: 1;
+        display: none;
+    }
+    
+
+    .yellowEllipse {
+        position: relative;
+        top: -48vh;
+        right: 5vw;
+    }
+}
+
+
+/* subsciption form */
+@font-face {
+    font-display: block;
+    font-family: Roboto;
+    src: url(https://assets.sendinblue.com/font/Roboto/Latin/normal/normal/7529907e9eaf8ebb5220c5f9850e3811.woff2) format("woff2"), url(https://assets.sendinblue.com/font/Roboto/Latin/normal/normal/25c678feafdc175a70922a116c9be3e7.woff) format("woff")
+}
+
+@font-face {
+    font-display: fallback;
+    font-family: Roboto;
+    font-weight: 600;
+    src: url(https://assets.sendinblue.com/font/Roboto/Latin/medium/normal/6e9caeeafb1f3491be3e32744bc30440.woff2) format("woff2"), url(https://assets.sendinblue.com/font/Roboto/Latin/medium/normal/71501f0d8d5aa95960f6475d5487d4c2.woff) format("woff")
+}
+
+@font-face {
+    font-display: fallback;
+    font-family: Roboto;
+    font-weight: 700;
+    src: url(https://assets.sendinblue.com/font/Roboto/Latin/bold/normal/3ef7cf158f310cf752d5ad08cd0e7e60.woff2) format("woff2"), url(https://assets.sendinblue.com/font/Roboto/Latin/bold/normal/ece3a1d82f18b60bcce0211725c476aa.woff) format("woff")
+}
+
+#sib-container input:-ms-input-placeholder {
+    text-align: left;
+    font-family: "Helvetica", sans-serif;
+    color: #c0ccda;
+}
+
+#sib-container input::placeholder {
+    text-align: left;
+    font-family: "Helvetica", sans-serif;
+    color: #c0ccda;
+}
+
+#sib-container textarea::placeholder {
+    text-align: left;
+    font-family: "Helvetica", sans-serif;
+    color: #c0ccda;
+}
+
+#sib-form {
+    display: flex;
+    max-width: 30rem;
+}
